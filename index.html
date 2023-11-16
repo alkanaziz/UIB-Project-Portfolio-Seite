@@ -10,57 +10,657 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- Tailwind CSS Datei -->
     <link rel="stylesheet" href="./css/style.css" />
+
     <title>Portfolio Webseite - UIB Project</title>
   </head>
-  <body class="bg-slate-800 text-slate-200 w-screen">
+  <body class="bg-slate-200 text-slate-800">
+    <!-- Header - Kopfteil -->
+    <!-- HEADER MOBILE -->
+    <header
+      class="group flex flex-col gap-2 bg-slate-700 text-slate-200 min-h-fit w-full shadow-xl fixed top-0 md:invisible z-10"
+      tabindex="2"
+    >
+      <div class="flex cursor-pointer items-center justify-between pt-10 px-10">
+        <h1
+          class="rounded-md p-2 text-2xl font-black hover:bg-slate-200 focus: hover:text-slate-800 active:scale-95 transition-all ease-in"
+        >
+          <a href="#">Alkan's Webseite</a>
+        </h1>
+        <i
+          class="fa-solid fa-bars text-lg transition-all duration-500 group-focus:-rotate-180"
+        ></i>
+      </div>
+      <nav
+        class="flex flex-col gap-2 invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000"
+      >
+        <a
+          class="rounded-md px-3 py-2 text-lg font-black hover:bg-slate-200 hover:text-slate-800 active:scale-95 transition-all ease-in"
+          href="#"
+          >Home</a
+        >
+        <a
+          class="rounded-md px-3 py-2 text-lg font-black hover:bg-slate-200 hover:text-slate-800 active:scale-95 transition-all ease-in"
+          href="#Skills"
+          >Skills</a
+        >
+        <a
+          class="rounded-md px-3 py-2 text-lg font-black hover:bg-slate-200 hover:text-slate-800 active:scale-95 transition-all ease-in"
+          href="#Education"
+          >Education</a
+        >
+        <a
+          class="rounded-md px-3 py-2 text-lg font-black hover:bg-slate-200 hover:text-slate-800 active:scale-95 transition-all ease-in"
+          href="#Projects"
+          >Projects</a
+        >
+        <a
+          class="rounded-md px-3 py-2 text-lg font-black hover:bg-slate-200 hover:text-slate-800 active:scale-95 transition-all ease-in"
+          href="#Contact"
+          >Contact</a
+        >
+      </nav>
+    </header>
+
+    <!-- HEADER TABLET and LAPTOP -->
+    <header
+      class="bg-slate-700 text-slate-200 shadow-2xl h-1/6 invisible fixed w-full top-0 md:visible z-10"
+    >
+      <div
+        class="h-full max-w-7xl m-auto flex justify-center items-center flex-col sm:flex-row sm:justify-between"
+      >
+        <h1
+          class="rounded-md px-3 p-2 text-2xl font-black hover:bg-slate-200 hover:text-slate-800 active:scale-95 transition-all ease-in"
+        >
+          <a href="#">Alkan's Webseite</a>
+        </h1>
+        <nav class="flex gap-5">
+          <a
+            class="rounded-md px-3 py-2 text-lg font-black hover:bg-slate-200 hover:text-slate-800 active:scale-95 transition-all ease-in"
+            href="#"
+            >Home</a
+          >
+          <a
+            class="rounded-md px-3 py-2 text-lg font-black hover:bg-slate-200 hover:text-slate-800 active:scale-95 transition-all ease-in"
+            href="#Skills"
+            >Skills</a
+          >
+          <a
+            class="rounded-md px-3 py-2 text-lg font-black hover:bg-slate-200 hover:text-slate-800 active:scale-95 transition-all ease-in"
+            href="#Education"
+            >Education</a
+          >
+          <a
+            class="rounded-md px-3 py-2 text-lg font-black hover:bg-slate-200 hover:text-slate-800 active:scale-95 transition-all ease-in"
+            href="#Projects"
+            >Projects</a
+          >
+          <a
+            class="rounded-md px-3 py-2 text-lg font-black hover:bg-slate-200 hover:text-slate-800 active:scale-95 transition-all ease-in"
+            href="#Contact"
+            >Contact</a
+          >
+        </nav>
+      </div>
+    </header>
+
     <!-- HERO Section -->
-    <section class="h-screen snap-center">
-      <!-- Header - Kopfteil -->
-      <header class="bg-slate-700 h-1/6">
-        <div class="h-full max-w-7xl m-auto flex justify-center items-center flex-col sm:flex-row sm:justify-between">
-          <h1 class="rounded-md px-3 py-2 text-2xl font-black hover:bg-slate-200 hover:text-slate-800 transition-all duration-100 ease-in"><a href="#">Alkan's Webseite</a></h1>
-          <nav class="flex gap-5">
-            <a class="rounded-md px-3 py-2 text-lg font-black hover:bg-slate-200 hover:text-slate-800 transition-all duration-100 ease-in" href="#Skills">Skills</a>
-            <a class="rounded-md px-3 py-2 text-lg font-black hover:bg-slate-200 hover:text-slate-800 transition-all duration-100 ease-in" href="#Education">Education</a>
-            <a class="rounded-md px-3 py-2 text-lg font-black hover:bg-slate-200 hover:text-slate-800 transition-all duration-100 ease-in" href="#Projects">Projects</a>
-            <a class="rounded-md px-3 py-2 text-lg font-black hover:bg-slate-200 hover:text-slate-800 transition-all duration-100 ease-in" href="#Contact">Contact</a>
-          </nav>
+    <section id="Hero" class="lg:h-screen lg:snap-center">
+      <div
+        class="max-w-7xl h-full m-auto mt-20 flex items-center flex-col md:flex-row"
+      >
+        <div class="mx-10 my-14 md:mx-5 lg:mx-0">
+          <h2 class="text-4xl mb-10">
+            Hi, I'm Alkan <span><i class="fa-solid fa-laptop"></i></span>
+          </h2>
+          <p class="text-2xl pb-10">
+            I'm a web developer, husband and father of a lovely daughter.
+          </p>
+          <p class="text-2xl">
+            Computers have fascinated me since my childhood. I am committed to
+            continuously improving myself in the field of web development and to
+            become a better developer.
+          </p>
         </div>
-      </header>
-      <div class="max-w-7xl m-auto">
-        <img src="./img/12067486_4891582.svg" width="500rem" alt="">
+        <img
+          src="./img/12067486_4891582.svg"
+          width="300rem"
+          alt="hero image"
+          class="hover:drop-shadow-[0_25px_25px_rgba(0,0,0,0.25)]"
+        />
       </div>
     </section>
 
     <!-- Skills - Kompotenzen -->
-    <section id="Skills" class="h-screen snap-center max-w-7xl m-auto flex justify-center items-center">
-      Skills Kompotenzen
+    <section
+      id="Skills"
+      class="lg:h-screen lg:snap-center max-w-7xl mx-auto flex justify-center items-center flex-col"
+    >
+      <div class="w-full px-10 mt-24">
+        <h2 class="text-3xl text-center font-black md:text-left">Skills</h2>
+      </div>
+      <div
+        class="flex justify-center items-center flex-col gap-3 md:flex-row md:flex-wrap"
+      >
+        <div
+          id="HTML"
+          class="group min-w-[300px] flex flex-col items-center gap-6 py-6 border border-solid border-slate-300 px-2 rounded-2xl shadow-xl"
+        >
+          <img
+            src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"
+            alt="HTML5 icon"
+            class="group-hover:scale-125 group-hover:rounded-lg transition-all duration-500"
+          />
+          <h3 class="font-black text-2xl">HTML</h3>
+          <span class="text-xl">5 Months Experience</span>
+        </div>
+
+        <div
+          id="CSS"
+          class="group min-w-[300px] flex flex-col items-center gap-6 py-6 border border-solid border-slate-300 px-2 rounded-2xl shadow-xl"
+        >
+          <img
+            src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white"
+            alt="CSS3 icon"
+            class="group-hover:scale-125 group-hover:rounded-lg transition-all duration-500"
+          />
+          <h3 class="font-black text-2xl">CSS3</h3>
+          <span class="text-xl">5 Months Experience</span>
+        </div>
+
+        <div
+          id="Git"
+          class="group min-w-[300px] flex flex-col items-center gap-6 py-6 border border-solid border-slate-300 px-2 rounded-2xl shadow-xl"
+        >
+          <img
+            src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white"
+            alt="Git icon"
+            class="group-hover:scale-125 group-hover:rounded-lg transition-all duration-500"
+          />
+          <h3 class="font-black text-2xl">Git</h3>
+          <span class="text-xl">3 Months Experience</span>
+        </div>
+
+        <div
+          id="GitHub"
+          class="group min-w-[300px] flex flex-col items-center gap-6 py-6 border border-solid border-slate-300 px-2 rounded-2xl shadow-xl"
+        >
+          <img
+            src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"
+            alt="GitHub icon"
+            class="group-hover:scale-125 group-hover:rounded-lg transition-all duration-500"
+          />
+          <h3 class="font-black text-2xl">GitHub</h3>
+          <span class="text-xl">3 Months Experience</span>
+        </div>
+
+        <div
+          id="JavaScript"
+          class="group min-w-[300px] flex flex-col items-center gap-6 py-6 border border-solid border-slate-300 px-2 rounded-2xl shadow-xl"
+        >
+          <img
+            src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"
+            alt="JavaScript icon"
+            class="group-hover:scale-125 group-hover:rounded-lg transition-all duration-500"
+          />
+          <h3 class="font-black text-2xl">JavaScript</h3>
+          <span class="text-xl">1 Month Experience</span>
+        </div>
+
+        <div
+          id="MongoDB"
+          class="group min-w-[300px] flex flex-col items-center gap-6 py-6 border border-solid border-slate-300 px-2 rounded-2xl shadow-xl"
+        >
+          <img
+            src="https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white"
+            alt="MongoDB icon"
+            class="group-hover:scale-125 group-hover:rounded-lg transition-all duration-500"
+          />
+          <h3 class="font-black text-2xl">MongoDB</h3>
+          <span class="text-xl">0 Month Experience</span>
+        </div>
+
+        <div
+          id="Express-js"
+          class="group min-w-[300px] flex flex-col items-center gap-6 py-6 border border-solid border-slate-300 px-2 rounded-2xl shadow-xl"
+        >
+          <img
+            src="https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB"
+            alt="Express.js icon"
+            class="group-hover:scale-125 group-hover:rounded-lg transition-all duration-500"
+          />
+          <h3 class="font-black text-2xl">Express.js</h3>
+          <span class="text-xl">0 Month Experience</span>
+        </div>
+
+        <div
+          id="React"
+          class="group min-w-[300px] flex flex-col items-center gap-6 py-6 border border-solid border-slate-300 px-2 rounded-2xl shadow-xl"
+        >
+          <img
+            src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"
+            alt="React icon"
+            class="group-hover:scale-125 group-hover:rounded-lg transition-all duration-500"
+          />
+          <h3 class="font-black text-2xl">React</h3>
+          <span class="text-xl">0 Month Experience</span>
+        </div>
+
+        <div
+          id="Node-js"
+          class="group min-w-[300px] flex flex-col items-center gap-6 py-6 border border-solid border-slate-300 px-2 rounded-2xl shadow-xl"
+        >
+          <img
+            src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white"
+            alt="Node.js icon"
+            class="group-hover:scale-125 group-hover:rounded-lg transition-all duration-500"
+          />
+          <h3 class="font-black text-2xl">Node.js</h3>
+          <span class="text-xl">0 Month Experience</span>
+        </div>
+      </div>
     </section>
 
     <!-- Education - Ausbildung und Zertifikate -->
-    <section id="Education" class="h-screen snap-center max-w-7xl m-auto flex justify-center items-center">
-      Education - Ausbildung und Zertifikate
+    <section
+      id="Education"
+      class="lg:h-screen lg:snap-center max-w-7xl m-auto flex justify-center items-center flex-col"
+    >
+      <div class="w-full px-10 mt-24">
+        <h2 class="text-3xl text-left font-black">Education</h2>
+      </div>
+      <div class="m-2 space-y-2 w-full">
+        <div
+          class="group flex flex-col gap-2 rounded-lg bg-slate-700 p-5 text-white"
+          tabindex="3"
+        >
+          <div class="flex cursor-pointer items-center justify-between">
+            <span class="text-xl hover:underline hover:text-slate-200">
+              Bachelor Degree
+            </span>
+            <i
+              class="fa-solid fa-circle-chevron-down text-lg transition-all duration-1000 group-focus:-rotate-180"
+            ></i>
+          </div>
+          <div
+            class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000"
+          >
+            <ul>
+              <li>
+                2008 - 2012 | Bachelor of Security Sciences and Double Bachelor
+                of Public Administration
+              </li>
+              <li>Ankara, Turkey</li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="group flex flex-col gap-2 rounded-lg bg-slate-700 p-5 text-white"
+          tabindex="1"
+        >
+          <div class="flex cursor-pointer items-center justify-between">
+            <span class="text-xl hover:underline hover:text-slate-200">
+              Certifications in Information Technology
+            </span>
+            <i
+              class="fa-solid fa-circle-chevron-down text-lg transition-all duration-500 group-focus:-rotate-180"
+            ></i>
+          </div>
+          <div
+            class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000"
+          >
+            <ul>
+              <li>Full Stack Software Developer</li>
+              <ul class="ml-5 mb-5">
+                <li>
+                  <a
+                    class="hover:underline"
+                    href="https://www.credly.com/badges/21ca9b0b-3511-471d-81cb-cb3a5de64eb3/public_url"
+                    target="_blank"
+                    >Introduction to Cloud Computing<i
+                      class="fa-solid fa-arrow-up-right-from-square ml-3"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="hover:underline"
+                    href="https://www.credly.com/badges/90ecba24-05d5-4203-b87d-7e272eb6aff7/public_url"
+                    target="_blank"
+                    >Web Development with HTML, CSS, JavaScript Essentials<i
+                      class="fa-solid fa-arrow-up-right-from-square ml-3"
+                    ></i
+                  ></a>
+                </li>
+              </ul>
+
+              <li>Python</li>
+              <ul class="ml-5 mb-5">
+                <li>
+                  <a
+                    class="hover:underline"
+                    href="https://coursera.org/share/1bf1b90f2b2f87e8dd1606508e5e936e"
+                    target="_blank"
+                    >Programming for Everybody (Getting Started with Python)<i
+                      class="fa-solid fa-arrow-up-right-from-square ml-3"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="hover:underline"
+                    href="https://coursera.org/share/86def6153958af98f6c8616e7e19a6e2"
+                    target="_blank"
+                    >Python Data Structures<i
+                      class="fa-solid fa-arrow-up-right-from-square ml-3"
+                    ></i
+                  ></a>
+                </li>
+              </ul>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="certifikations flex gap-5">
+        <div>
+          <div
+            data-iframe-width="150"
+            data-iframe-height="270"
+            data-share-badge-id="21ca9b0b-3511-471d-81cb-cb3a5de64eb3"
+            data-share-badge-host="https://www.credly.com"
+          ></div>
+          <script
+            type="text/javascript"
+            async
+            src="//cdn.credly.com/assets/utilities/embed.js"
+          ></script>
+        </div>
+
+        <div>
+          <div
+            data-iframe-width="150"
+            data-iframe-height="270"
+            data-share-badge-id="90ecba24-05d5-4203-b87d-7e272eb6aff7"
+            data-share-badge-host="https://www.credly.com"
+          ></div>
+          <script
+            type="text/javascript"
+            async
+            src="//cdn.credly.com/assets/utilities/embed.js"
+          ></script>
+        </div>
+      </div>
     </section>
 
     <!-- Project - Projekt -->
-    <section id="Projects" class="h-screen snap-center max-w-7xl m-auto flex justify-center items-center">Projects</section>
+    <section
+      id="Projects"
+      class="lg:h-screen lg:snap-center max-w-7xl m-auto flex flex-col justify-center items-center"
+    >
+      <div class="w-full px-10 mt-24">
+        <h2 class="text-3xl text-center font-black md:text-left">Projects</h2>
+      </div>
+      <div
+        class="flex flex-col justify-center items-center md:flex-row md:flex-wrap"
+      >
+        <div
+          class="group w-80 h-80 flex justify-center items-center overflow-hidden"
+        >
+          <img
+            src="./img/Project-1.png"
+            alt="Speaker Shop Layout"
+            class="w-72 rounded-xl group-hover:rotate-12 group-hover:scale-125 transition-all duration-500 ease-in-out shadow-2xl"
+          />
+          <div
+            class="absolute w-80 h-80 rounded-xl opacity-0 group-hover:opacity-100 transition-all ease-in-out flex flex-col justify-between"
+          >
+            <h4
+              class="mt-10 mx-5 text-slate-200 font-black [text-shadow:2px_2px_black] text-2xl translate-y-4 transition-all duration-1000"
+            >
+              <a
+                href="https://alkanaziz.github.io/layout-speaker-shop/"
+                target="_blank"
+                class="hover:underline"
+                >Speaker Shop Layout</a
+              >
+            </h4>
+            <div class="flex">
+              <div
+                class="icon mb-10 ml-5 bg-slate-200 w-fit py-1 px-2 rounded-xl"
+              >
+                <i class="fa-regular fa-eye"></i><span> 100</span>
+              </div>
+              <div
+                class="icon mb-10 ml-5 bg-slate-200 w-fit py-1 px-2 rounded-xl"
+              >
+                <i class="fa-solid fa-heart"></i><span> 49</span>
+              </div>
+              <div
+                class="icon mb-10 ml-5 bg-slate-200 w-fit py-1 px-2 rounded-xl"
+              >
+                <a
+                  href="https://alkanaziz.github.io/layout-speaker-shop/"
+                  target="_blank"
+                  ><i
+                    class="fa-solid fa-arrow-up-right-from-square hover:scale-125 transition-all"
+                  ></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="group w-80 h-80 flex justify-center items-center overflow-hidden"
+        >
+          <img
+            src="./img/Project-2.png"
+            alt="Speaker Shop Layout"
+            class="w-72 rounded-xl group-hover:rotate-12 group-hover:scale-125 transition-all duration-500 ease-in-out shadow-2xl"
+          />
+          <div
+            class="absolute w-80 h-80 rounded-xl opacity-0 group-hover:opacity-100 transition-all ease-in-out flex flex-col justify-between"
+          >
+            <h4
+              class="mt-10 mx-5 text-slate-200 font-black [text-shadow:2px_2px_black] text-2xl translate-y-4 transition-all duration-1000"
+            >
+              <a
+                href="https://alkanaziz.github.io/unit-converter-javascript/"
+                target="_blank"
+                class="hover:underline"
+                >Unit Converter with HTML, CSS and JavaScript</a
+              >
+            </h4>
+            <div class="flex">
+              <div
+                class="icon mb-10 ml-5 bg-slate-200 w-fit py-1 px-2 rounded-xl"
+              >
+                <i class="fa-regular fa-eye"></i><span> 100</span>
+              </div>
+              <div
+                class="icon mb-10 ml-5 bg-slate-200 w-fit py-1 px-2 rounded-xl"
+              >
+                <i class="fa-solid fa-heart"></i><span> 49</span>
+              </div>
+              <div
+                class="icon mb-10 ml-5 bg-slate-200 w-fit py-1 px-2 rounded-xl"
+              >
+                <a
+                  href="https://alkanaziz.github.io/unit-converter-javascript/"
+                  target="_blank"
+                  ><i
+                    class="fa-solid fa-arrow-up-right-from-square hover:scale-125 transition-all"
+                  ></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="group w-80 h-80 flex justify-center items-center overflow-hidden"
+        >
+          <img
+            src="./img/Project-3.png"
+            alt="Speaker Shop Layout"
+            class="w-72 rounded-xl group-hover:rotate-12 group-hover:scale-125 transition-all duration-500 ease-in-out shadow-2xl"
+          />
+          <div
+            class="absolute w-80 h-80 rounded-xl opacity-0 group-hover:opacity-100 transition-all ease-in-out flex flex-col justify-between"
+          >
+            <h4
+              class="mt-10 mx-5 text-slate-200 font-black [text-shadow:2px_2px_black] text-2xl translate-y-4 transition-all duration-1000"
+            >
+              <a
+                href="https://alkanaziz.github.io/freelance-developer-page-layout/"
+                target="_blank"
+                class="hover:underline"
+                >Freelance Developer Page Layout</a
+              >
+            </h4>
+            <div class="flex">
+              <div
+                class="icon mb-10 ml-5 bg-slate-200 w-fit py-1 px-2 rounded-xl"
+              >
+                <i class="fa-regular fa-eye"></i><span> 100</span>
+              </div>
+              <div
+                class="icon mb-10 ml-5 bg-slate-200 w-fit py-1 px-2 rounded-xl"
+              >
+                <i class="fa-solid fa-heart"></i><span> 49</span>
+              </div>
+              <div
+                class="icon mb-10 ml-5 bg-slate-200 w-fit py-1 px-2 rounded-xl"
+              >
+                <a
+                  href="https://alkanaziz.github.io/freelance-developer-page-layout/"
+                  target="_blank"
+                  ><i
+                    class="fa-solid fa-arrow-up-right-from-square hover:scale-125 transition-all"
+                  ></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="group w-80 h-80 flex justify-center items-center overflow-hidden"
+        >
+          <img
+            src="./img/Project-4.png"
+            alt="Speaker Shop Layout"
+            class="w-72 rounded-xl group-hover:rotate-12 group-hover:scale-125 transition-all duration-500 ease-in-out shadow-2xl"
+          />
+          <div
+            class="absolute w-80 h-80 rounded-xl opacity-0 group-hover:opacity-100 transition-all ease-in-out flex flex-col justify-between"
+          >
+            <h4
+              class="mt-10 mx-5 text-slate-200 font-black [text-shadow:2px_2px_black] text-2xl translate-y-4 transition-all duration-1000"
+            >
+              <a
+                href="https://alkanaziz.github.io/data-transparent-login/"
+                target="_blank"
+                class="hover:underline"
+                >Transparent Login Page</a
+              >
+            </h4>
+            <div class="flex">
+              <div
+                class="icon mb-10 ml-5 bg-slate-200 w-fit py-1 px-2 rounded-xl"
+              >
+                <i class="fa-regular fa-eye"></i><span> 100</span>
+              </div>
+              <div
+                class="icon mb-10 ml-5 bg-slate-200 w-fit py-1 px-2 rounded-xl"
+              >
+                <i class="fa-solid fa-heart"></i><span> 49</span>
+              </div>
+              <div
+                class="icon mb-10 ml-5 bg-slate-200 w-fit py-1 px-2 rounded-xl"
+              >
+                <a
+                  href="https://alkanaziz.github.io/data-transparent-login/"
+                  target="_blank"
+                  ><i
+                    class="fa-solid fa-arrow-up-right-from-square hover:scale-125 transition-all"
+                  ></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="group w-80 h-80 flex justify-center items-center overflow-hidden"
+        >
+          <img
+            src="./img/Project-5.png"
+            alt="Speaker Shop Layout"
+            class="w-72 rounded-xl group-hover:rotate-12 group-hover:scale-125 transition-all duration-500 ease-in-out shadow-2xl"
+          />
+          <div
+            class="absolute w-80 h-80 rounded-xl opacity-0 group-hover:opacity-100 transition-all ease-in-out flex flex-col justify-between"
+          >
+            <h4
+              class="mt-10 mx-5 text-slate-200 font-black [text-shadow:2px_2px_black] text-2xl translate-y-4 transition-all duration-1000"
+            >
+              <a
+                href="https://alkanaziz.github.io/ui-ux-nonamepeople-page/"
+                target="_blank"
+                class="hover:underline"
+                >UI - UX Noname People Page</a
+              >
+            </h4>
+            <div class="flex">
+              <div
+                class="icon mb-10 ml-5 bg-slate-200 w-fit py-1 px-2 rounded-xl"
+              >
+                <i class="fa-regular fa-eye"></i><span> 100</span>
+              </div>
+              <div
+                class="icon mb-10 ml-5 bg-slate-200 w-fit py-1 px-2 rounded-xl"
+              >
+                <i class="fa-solid fa-heart"></i><span> 49</span>
+              </div>
+              <div
+                class="icon mb-10 ml-5 bg-slate-200 w-fit py-1 px-2 rounded-xl"
+              >
+                <a
+                  href="https://alkanaziz.github.io/ui-ux-nonamepeople-page/"
+                  target="_blank"
+                  ><i
+                    class="fa-solid fa-arrow-up-right-from-square hover:scale-125 transition-all"
+                  ></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Contact - Kontakt -->
-    <section id="Contact" class="h-screen snap-center max-w-7xl m-auto">
-      Contact - Kontakt
+    <section id="Contact" class="lg:h-screen lg:snap-center max-w-7xl m-auto">
+      <div class="mt-20">Contact - Kontakt</div>
       <!-- Footer - Fußteil -->
       <footer>
         <a class="no-underline fixed bottom-10 right-10" href="#"
-          ><button
-            class="h-12 w-12 rounded-full bg-slate-600"
-          >
+          ><button class="h-12 w-12 rounded-full bg-slate-600">
             <i
-              class="text-slate-300 text-xl hover:scale-125 hover:text-white transition-all duration-100 ease-in fa-solid fa-house"
+              class="text-slate-300 text-xl hover:scale-125 hover:text-white active:scale-95 transition-all ease-in fa-solid fa-house"
             ></i></button
         ></a>
 
-        <p>Bild von <a href="https://de.freepik.com/vektoren-kostenlos/mann-der-ein-uhrzeitmanagementkonzept-haelt_12067486.htm#query=man&position=41&from_view=search&track=sph">Freepik</a></p>
+        <p>
+          Bild von
+          <a
+            href="https://de.freepik.com/vektoren-kostenlos/mann-der-ein-uhrzeitmanagementkonzept-haelt_12067486.htm#query=man&position=41&from_view=search&track=sph"
+            >Freepik</a
+          >
+        </p>
       </footer>
     </section>
   </body>
