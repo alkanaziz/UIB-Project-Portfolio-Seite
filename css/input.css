@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 
-@keyframes slide-in-left {
+@keyframes slide {
     0% {
       transform: translateY(-50px);
       opacity: 0;
@@ -15,7 +15,7 @@
   }
 
   .group:hover h4 {
-    animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   }
 
   .group:hover .absolute {

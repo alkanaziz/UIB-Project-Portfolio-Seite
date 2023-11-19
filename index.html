@@ -13,7 +13,7 @@
     <!-- Tailwind CSS Datei -->
     <link rel="stylesheet" href="./css/style.css" />
 
-    <title>Portfolio Webseite - UIB Project</title>
+    <title>Portfolio Website - UIB Project</title>
   </head>
   <body class="bg-slate-200 text-slate-800">
     <!-- Header - Kopfteil -->
@@ -22,11 +22,11 @@
       class="group flex flex-col gap-2 bg-slate-700 text-slate-200 min-h-fit w-full shadow-xl fixed top-0 md:invisible z-10"
       tabindex="2"
     >
-      <div class="flex cursor-pointer items-center justify-between pt-10 px-10">
+      <div class="flex cursor-pointer items-center justify-between my-5 px-10">
         <h1
           class="rounded-md p-2 text-2xl font-black hover:bg-slate-200 focus: hover:text-slate-800 active:scale-95 transition-all ease-in"
         >
-          <a href="#">Alkan's Webseite</a>
+          <a href="#">Alkan's Website</a>
         </h1>
         <i
           class="fa-solid fa-bars text-lg transition-all duration-500 group-focus:-rotate-180"
@@ -65,39 +65,39 @@
 
     <!-- HEADER TABLET and LAPTOP -->
     <header
-      class="bg-slate-700 text-slate-200 shadow-2xl h-1/6 invisible fixed w-full top-0 md:visible z-10"
+      class="bg-slate-700 text-slate-200 shadow-2xl invisible fixed w-full top-0 md:visible md:px-8 z-10"
     >
       <div
         class="h-full max-w-7xl m-auto flex justify-center items-center flex-col sm:flex-row sm:justify-between"
       >
         <h1
-          class="rounded-md px-3 p-2 text-2xl font-black hover:bg-slate-200 hover:text-slate-800 active:scale-95 transition-all ease-in"
+          class="rounded-md px-2 py-2 text-2xl font-black hover:bg-slate-200 hover:text-slate-800 active:scale-95 transition-all ease-in"
         >
-          <a href="#">Alkan's Webseite</a>
+          <a href="#">Alkan's Website</a>
         </h1>
-        <nav class="flex gap-5">
+        <nav class="flex gap-5 my-3">
           <a
-            class="rounded-md px-3 py-2 text-lg font-black hover:bg-slate-200 hover:text-slate-800 active:scale-95 transition-all ease-in"
+            class="rounded-md px-2 py-2 text-lg font-black hover:bg-slate-200 hover:text-slate-800 active:scale-95 transition-all ease-in"
             href="#"
             >Home</a
           >
           <a
-            class="rounded-md px-3 py-2 text-lg font-black hover:bg-slate-200 hover:text-slate-800 active:scale-95 transition-all ease-in"
+            class="rounded-md px-2 py-2 text-lg font-black hover:bg-slate-200 hover:text-slate-800 active:scale-95 transition-all ease-in"
             href="#Skills"
             >Skills</a
           >
           <a
-            class="rounded-md px-3 py-2 text-lg font-black hover:bg-slate-200 hover:text-slate-800 active:scale-95 transition-all ease-in"
+            class="rounded-md px-2 py-2 text-lg font-black hover:bg-slate-200 hover:text-slate-800 active:scale-95 transition-all ease-in"
             href="#Education"
             >Education</a
           >
           <a
-            class="rounded-md px-3 py-2 text-lg font-black hover:bg-slate-200 hover:text-slate-800 active:scale-95 transition-all ease-in"
+            class="rounded-md px-2 py-2 text-lg font-black hover:bg-slate-200 hover:text-slate-800 active:scale-95 transition-all ease-in"
             href="#Projects"
             >Projects</a
           >
           <a
-            class="rounded-md px-3 py-2 text-lg font-black hover:bg-slate-200 hover:text-slate-800 active:scale-95 transition-all ease-in"
+            class="rounded-md px-2 py-2 text-lg font-black hover:bg-slate-200 hover:text-slate-800 active:scale-95 transition-all ease-in"
             href="#Contact"
             >Contact</a
           >
@@ -108,9 +108,9 @@
     <!-- HERO Section -->
     <section id="Hero" class="lg:h-screen lg:snap-center">
       <div
-        class="max-w-7xl h-full m-auto mt-20 flex items-center flex-col md:flex-row"
+        class="max-w-7xl h-full m-auto mt-20 flex justify-center items-center flex-col md:flex-row"
       >
-        <div class="mx-10 my-14 md:mx-5 lg:mx-0">
+        <div class="mx-10 my-14 sm:px-10 md:mx-5 lg:mx-0">
           <h2 class="text-4xl mb-10">
             Hi, I'm Alkan <span><i class="fa-solid fa-laptop"></i></span>
           </h2>
@@ -138,7 +138,7 @@
       class="lg:h-screen lg:snap-center max-w-7xl mx-auto flex justify-center items-center flex-col"
     >
       <div class="w-full px-10 mt-24">
-        <h2 class="text-3xl text-center font-black md:text-left">Skills</h2>
+        <h2 class="text-3xl text-center m-10 font-black">Skills</h2>
       </div>
       <div
         class="flex justify-center items-center flex-col gap-3 md:flex-row md:flex-wrap"
@@ -268,7 +268,7 @@
       class="lg:h-screen lg:snap-center max-w-7xl m-auto flex justify-center items-center flex-col"
     >
       <div class="w-full px-10 mt-24">
-        <h2 class="text-3xl text-left font-black">Education</h2>
+        <h2 class="text-3xl text-center m-5 font-black">Education</h2>
       </div>
       <div class="mx-5 w-full">
         <div class="m-2 space-y-2">
@@ -402,11 +402,9 @@
       class="lg:h-screen lg:snap-center max-w-7xl m-auto flex flex-col justify-center items-center"
     >
       <div class="w-full px-10 mt-24">
-        <h2 class="text-3xl text-center font-black md:text-left">Projects</h2>
+        <h2 class="text-3xl text-center font-black">Projects</h2>
       </div>
-      <div
-        class="flex flex-col justify-center items-center md:flex-row md:flex-wrap"
-      >
+      <div class="grid grid-cols-1 gap-x-6 sm:grid-cols-2 lg:grid-cols-3">
         <div
           class="group w-80 h-80 flex justify-center items-center overflow-hidden"
         >
@@ -645,24 +643,153 @@
     </section>
 
     <!-- Contact - Kontakt -->
-    <section id="Contact" class="lg:h-screen lg:snap-center max-w-7xl m-auto">
-      <div class="mt-20">Contact - Kontakt</div>
+    <section
+      id="Contact"
+      class="lg:max-h-screen lg:snap-center m-auto flex flex-col justify-center items-center"
+    >
+      <div class="w-full px-10 mt-24">
+        <h2 class="text-3xl text-center font-black">Contact</h2>
+      </div>
+      <div
+        class="border border-solid rounded-lg p-10 bg-gradient-to-br from-slate-700 to-slate-400"
+      >
+        <form
+          action="https://formspree.io/f/xvojndvn"
+          method="post"
+          class="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6"
+        >
+          <div class="sm:col-span-3">
+            <label
+              class="block text-md font-black text-slate-100"
+              for="first-name"
+              aria-required="true"
+              >*First Name:</label
+            >
+            <div>
+              <input
+                type="text"
+                name="first-name"
+                id="first-name"
+                required
+                class="block w-full rounded-md border-none py-1.5 px-2 text-slate-600 shadow-sm focus:outline-2 focus:outline-slate-900"
+              />
+            </div>
+          </div>
+          <div class="sm:col-span-3">
+            <label
+              class="block text-md font-black text-slate-100"
+              for="last-name"
+              >Last Name:</label
+            >
+            <div>
+              <input
+                type="text"
+                name="last-name"
+                id="last-name"
+                class="block w-full rounded-md border-none py-1.5 px-2 text-slate-600 shadow-sm focus:outline-2 focus:outline-slate-900"
+              />
+            </div>
+          </div>
+
+          <div class="sm:col-span-3">
+            <label class="block text-md font-black text-slate-100" for="email"
+              >*Your E-Mail Adress:</label
+            >
+            <div>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                required
+                class="block w-full rounded-md border-none py-1.5 px-2 text-slate-600 shadow-sm focus:outline-2 focus:outline-slate-900"
+              />
+            </div>
+          </div>
+          <div class="sm:col-span-3">
+            <label class="block text-md font-black text-slate-100" for="phone"
+              >Your Phone Number:</label
+            >
+            <div>
+              <input
+                type="tel"
+                name="tel"
+                id="tel"
+                class="block w-full rounded-md border-none py-1.5 px-2 text-slate-600 shadow-sm focus:outline-2 focus:outline-slate-900"
+              />
+            </div>
+          </div>
+
+          <div class="sm:col-span-full">
+            <label
+              class="block text-md font-black text-slate-100"
+              for="textarea"
+              >*Your Message:</label
+            >
+            <div>
+              <textarea
+                name="textarea"
+                id="textarea"
+                cols="30"
+                rows="10"
+                required
+                class="block w-full rounded-md border-none py-1.5 px-2 text-slate-600 shadow-sm focus:outline-2 focus:outline-slate-900"
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="col-span-full m-auto">
+            <button
+              type="submit"
+              class="rounded-md bg-slate-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-slate-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-200"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+
       <!-- Footer - Fußteil -->
-      <footer>
-        <a class="no-underline fixed bottom-10 right-10" href="#"
-          ><button class="h-12 w-12 rounded-full bg-slate-600">
+      <footer class="w-screen h-max bg-slate-700 mt-10">
+        <!-- Home Button -->
+        <a class="no-underline fixed bottom-10 right-10 invisible md:visible" href="#"
+          ><button class="h-12 w-12 rounded-full bg-slate-700">
             <i
               class="text-slate-300 text-xl hover:scale-125 hover:text-white active:scale-95 transition-all ease-in fa-solid fa-house"
             ></i></button
         ></a>
 
-        <p>
-          Bild von
-          <a
-            href="https://de.freepik.com/vektoren-kostenlos/mann-der-ein-uhrzeitmanagementkonzept-haelt_12067486.htm#query=man&position=41&from_view=search&track=sph"
-            >Freepik</a
-          >
-        </p>
+        <div
+          class="max-w-7xl m-auto grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-3 text-slate-200 text-xl p-5"
+        >
+          <div class="m-auto">
+            <span>© 2023 Alkan Aziz</span>
+          </div>
+          <div class="footerIcons m-auto">
+            <a href="https://www.linkedin.com/in/alkanaziz/" target="_blank"
+              ><i
+                class="fa-brands fa-linkedin mx-4 hover:scale-125 hover:text-[#00A0DC] active:scale-100"
+              ></i
+            ></a>
+
+            <a href="https://github.com/alkanaziz" target="_blank">
+              <i
+                class="fa-brands fa-github mx-4 hover:scale-125 hover:text-white active:scale-100"
+              ></i>
+            </a>
+            <a href="mailto:alkanaziz@gmail.com" target="_blank">
+              <i
+                class="fa-solid fa-envelope mx-4 hover:scale-125 hover:text-red-500 active:scale-100"
+              ></i>
+            </a>
+          </div>
+          <p class="m-auto">
+            Bild von
+            <a
+              href="https://de.freepik.com/vektoren-kostenlos/mann-der-ein-uhrzeitmanagementkonzept-haelt_12067486.htm#query=man&position=41&from_view=search&track=sph"
+              >Freepik</a
+            >
+          </p>
+        </div>
       </footer>
     </section>
   </body>
